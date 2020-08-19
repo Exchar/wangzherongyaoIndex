@@ -1,0 +1,305 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*初始化样式类，让所有的超链接标签以及标题标签和列表标签不再具备一些影响美观且
+重复使用的属性*/
+a,ul,ol,h1,h2,h3,h4,h5,h5,h6{
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+}
+body{background: white}
+/*声明公共样式类*/
+.content{
+    width: 1200px;
+    margin:0 auto;
+}
+/*中部导航*/
+.nav-center{float:left;}
+.nav-center>li{
+    color:rgba(255,255,255,0.5);
+    text-align:center;
+    float: left;
+    margin:22px 19px 0px;
+}
+.nav-center>li>span{
+    display:block;
+    color:  #c9c7dc ;
+}
+.nav-center>li>span:first-child{
+   font-size:18px;
+}
+
+.nav-center>li>span:last-child{
+   font-size:12px;
+    margin-top:10px;
+}
+
+#top{
+    height:1100px;/*由图片的高度得来*/
+    background: url("../topBg.jpg") no-repeat center top;/*
+    背景图片简写属性：图片url地址 图片是否重复 图片位置左右定位 图片位置上下定位*/
+}
+#nav-top{
+    height:84px;
+    background: rgba(0,0,0,0.6);/*使其透明*/
+}
+.logo{float:left;}
+.entry{float: right;
+    padding-top: 20px;
+}
+.entry>span{
+    display:inline-block;
+    color:#fff;
+}
+.entry>span:first-child{
+    width:56px;
+    height:56px;
+    background: orangered;
+    vertical-align: top;
+    background: url("../index.png") no-repeat -184px 0;
+}
+.entry>span:last-child{}
+.entry>span:last-child>span{
+    display:block;
+}
+.entry>span:last-child>span:last-child{
+    color:rgba(255,255,255,0.5);
+    font-size:12px;
+    margin-top:8px;
+}
+/*top内容*/
+/*上部3个box组合的大盒子*/
+#box1{
+
+    margin-top: 456px;
+    background: pink;
+}
+#box1>div{
+    height:342px;
+    float: left;
+
+}
+/*左边第一个盒子*/
+#box01{
+    width:605px;
+    background: rgba(20, 26, 35, 0.6);
+}
+.box01-logo{
+    height: 299px;
+}
+.box01-font>.on,.box01-font>li:hover{
+    color: #d38642;
+    background: #42404b;
+}
+.box01-font>li{
+    font-size: 15px;
+    line-height: 43px;
+    text-align:center;
+    width:121px;
+    float: left;
+    color: #c3aebd;
+}
+#box02{
+    width:359px;
+    background:rgba(36,33,42,0.8);
+   border-left: 1px;
+}
+.box02-content{
+    width: 325px;
+    margin: 0 auto;
+}
+.box02-top{
+    height: 50px;
+    border-bottom: 1px solid #000000 ;
+}
+.box02-top>li{
+    width: 52px;
+    height: 49px;
+    float:left;
+    text-align: center;
+    line-height: 49px;
+    position: relative;
+    color: #b5bbcb;
+}
+.box02-top>.on{
+    color: #fdc04b;
+}
+.box02-top>li>span:last-child{
+    display: block;
+    width: 52px;
+    height: 3px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background: transparent;
+}
+.box02-top>.on>span:last-child{
+    color: #f6c056;
+}
+.box02-ft{
+    margin-top: 18px;
+    width: 325px;
+    background: rgba(65,64,74,0.5);
+    margin-left: 16px;
+}
+.box02-ft{
+
+    line-height: 37px;
+
+}
+.box02-font{
+    width: 325px;
+}
+.box02-font>li{
+    width: 325px;
+    display: inline-block;
+    height: 12px;
+    margin-top: 10px;
+
+}
+
+.box02-font>li>span:last-child{
+   text-align: right;
+}
+.box02-font>li>span{
+    font-size: medium;
+    color:  #c3aebd;
+}
+#box03{
+    width:236px;
+    background:black;
+    border-left:1px;
+}
+#box03>a{
+    display: block;
+}
+#box03>a:first-child{
+    height: 128px;
+    background: url("../index.png") no-repeat 0px -219px;
+    border-top:1px solid #000;
+
+}
+#box03>a:nth-child(2){
+    height: 107px;
+    background: url("../index.png") no-repeat 0px -350px;
+    border-top:1px solid #000;
+}
+#box03>a:last-child{
+    height: 107px;
+    background: url("../index.png") no-repeat 0px -463px;
+    border-top:1px solid #000;
+}
+#box2>div{
+    padding-top:35px;
+    width:291px;
+    float:left;
+
+}
+#box2>div:nth-child(2),#box2>div:nth-child(3),#box2>div:last-child{
+    margin-left: 12px;
+}
+#box3>div{
+    float: left;
+}
+.content-left{
+    width: 873px;
+    margin-right: 32px;
+    min-height: 200px;
+    background-color:pink;
+}
+.strategy{
+    height: 549px;
+    background-color: blue;
+}
+.match{
+    height: 802px;
+    background:blue;
+}
+.title{
+    height: 60px;
+    background-color: aquamarine;
+    position: relative;
+}
+.title>h1{
+    font-size: 22px;
+    height: 22px;
+    line-height: 22px;
+    position: absolute;
+    top: 19px;
+    left: 0px;
+}
+.title>h1>span{
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    background-color:red;
+    vertical-align: middle;
+}
+.title>.more{
+    font-size: 14px;
+    display: block;
+    width: 50px;
+    position: absolute;
+    height: 14px;
+    padding-left: 15px;
+    background:url("../index.png") no-repeat -252px 0;
+    right: 0px;
+    top: 23px;
+    line-height: 14px;
+    color: #979596;
+}
+.strategy>.title>h1>span{
+    background: url("../index.png") no-repeat 0 -108px;
+}
+.tab-three{
+
+}
+.labels{
+    height: 48px;
+    background: pink;
+}
+.box>li{
+    width: 209px;
+    height: 205px;
+    background: darkorchid;
+    float: left;
+}
+.match>.title>h1>span{
+    background: url("../index.png") no-repeat 0 -186px;
+}
+.hero>.title>h1>span{
+    background: url("../index.png") no-repeat 2px -144px;
+}
+.kpl>.title>h1>span{
+    background: url("../index.png") no-repeat -156px -108px;
+}
+
+.content-right{
+    width: 295px;
+    min-height: 200px;
+    background-color:pink;
+}
+.hero{
+    height: 549px;
+}
+.buy{
+    width: 70px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    background: url("../index.png")no-repeat -253px -88px;
+    border-radius: 5px;
+    border:1px solid #f2c25c;
+    top: 19px;
+    right: 68px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+    padding-left: 32px;
+}
+
+
